@@ -1,0 +1,17 @@
+!!!
+%html
+  %head
+    %meta{ content: 'text/html; charset=UTF-8', 'http-equiv' => 'Content-Type' }
+    %link{ rel: 'shortcut icon', href: '/favicon.ico', type: 'image/x-icon' }
+    %title Coderails
+    = stylesheet_link_tag 'vendor',         'data-turbolinks-track' => true,
+                                            media: 'all', debug: false
+    = stylesheet_link_tag 'application',    'data-turbolinks-track' => true,
+                                            media: 'all'
+    = javascript_include_tag 'vendor',      'data-turbolinks-track' => true,
+                                            debug: false
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body
+    .container
+      = yield
