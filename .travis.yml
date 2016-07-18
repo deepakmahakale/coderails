@@ -1,0 +1,17 @@
+language: ruby
+rvm:
+- 2.2.0
+before_script:
+- cp config/database.travis.yml config/database.yml
+- RAILS_ENV=test bundle exec rake db:migrate
+cache: bundler
+bundler_args: "--without production development"
+deploy:
+  provider: heroku
+  api_key:
+    secure: ywMBv+ZtqQ7dwwdyDENMHGRiBlSKb+Gs7j9OXus/NT9GptyCZFTZa5XBLmfOkOLJfwRM6EkBrtqgqu52bdkqoEJJU3nrKl/Xcuen+JwxAx/3c00KrKvaPJFi9tnFmkuziHIL7bIU4Aw5A2Lkgj4Im1V/KW0aKbwTki/AknPEmCaznWFcHKFDIHCVpRCn1Vf3bo2Rtt//3SvabuMMcLkQNtHJwGhYaV202iyRnEdz8DDUIs59aMbBn4PPHTO4bfczu3MeQorD4cLMEi3LLaF4Yfun5AtX+Zdit5688w6Ar8UIv4hCPmXrfyl6BuwYxwf69orFtE+3IrCialRYf9ToJtkbyVzVFJH/3ILRX5L75nOKnZddcYDgiBwGtvCoLBzMuxnoj3mS13GlJTLG4uNHxOqDfwjF1Bz5IRRubF52REZ8Yd9br9hj88NLtMCYE3TEwDyXfAzqOZZUKSwONUWR0FdLBvh4KSZb9Kn2tYu+JYX/9qXWkg9uHOTCmkLWsGbzX/9z/7G/dgyo7vUtRez723iafXuvQmhLZSP2F2tuS8aXFLxJnGdaXz0SeScWq0/y4+fZcywW+ff7ytWIAiluEVrdfSOMbGMxld87xFrLnHSWJlwD7kMdkCM9fuEn/F1ybPCi5Zqtqkc2s/B73TMGQtP3AjP2cz4gT5NdT0oQPoo=
+  skip_cleanup: true
+branches:
+  only:
+  - master
+  - develop
