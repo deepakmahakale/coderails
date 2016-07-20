@@ -9,6 +9,7 @@ gem 'jquery-rails', '4.1.1'
 gem 'turbolinks', '2.5.3'
 gem 'jbuilder', '2.5.0'
 gem 'sdoc', '0.4.1', group: :doc
+gem 'redcarpet'
 
 group :development, :test do
   gem 'sqlite3', '1.3.11'
