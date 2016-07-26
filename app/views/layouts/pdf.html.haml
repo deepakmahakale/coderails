@@ -1,0 +1,11 @@
+!!!
+%html
+  %head
+    %meta{ charset: 'UTF-8' }
+    = wicked_pdf_stylesheet_link_tag 'pdf'
+    = wicked_pdf_stylesheet_link_tag 'pdf_vendor'
+  %body
+    #header
+      = wicked_pdf_image_tag 'coderails.png'
+    #content
+      = yield

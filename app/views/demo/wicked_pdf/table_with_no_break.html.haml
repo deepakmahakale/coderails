@@ -1,0 +1,10 @@
+= content_for :action do
+  Wicked PDF / Table With No Break
+%h3.pull-left
+  Wicked pdf
+.pdf-button.pull-right
+  = link_to 'PDF Version',
+            table_with_no_break_demo_wicked_pdf_path(format: :pdf),
+            class: 'btn btn-primary ', target: :_blank
+  .clearfix
+= render 'table_content'

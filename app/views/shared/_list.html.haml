@@ -1,0 +1,8 @@
+%h3
+  = title
+%hr
+%ol
+  - examples.each do |example|
+    %li
+      %strong
+        = link_to example[:title], example[:path]
