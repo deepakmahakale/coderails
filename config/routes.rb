@@ -5,6 +5,12 @@ Rails.application.routes.draw do
         get :table_with_no_break
       end
     end
+
+    resource :fusion_charts do
+      collection do
+        get :column2d
+      end
+    end
   end
 
   resource :pages, only: [] do
