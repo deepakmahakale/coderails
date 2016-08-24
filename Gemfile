@@ -17,6 +17,7 @@ group :development, :test do
   gem 'sqlite3', '1.3.11'
   gem 'byebug', '9.0.5'
   gem 'rspec-rails', '3.4.2'
+  gem 'xray-rails'
 end
 
 group :production do
