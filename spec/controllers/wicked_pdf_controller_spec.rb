@@ -1,4 +1,4 @@
-RSpec.describe Demo::WickedPdfController, type: :controller do
+RSpec.describe WickedPdfController, type: :controller do
   describe 'GET #table_with_no_break' do
     it 'returns http success' do
       get :table_with_no_break
