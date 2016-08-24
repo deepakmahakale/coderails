@@ -14,6 +14,12 @@ Rails.application.routes.draw do
       end
     end
 
+    resource :jwplayer, only: [], controller: :jwplayer do
+      collection do
+        get :skin
+      end
+    end
+    get 'jwplayer', to: 'jwplayer#index'
   end
 
   get :home, to: 'pages#home'
@@ -22,4 +28,5 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   match '*path' => redirect('/'), via: :get
+
 end
