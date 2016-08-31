@@ -1,4 +1,4 @@
-%ol.breadcrumb
+%ol.breadcrumb.pull-left
   %li= link_to 'Demo', root_path
   - unless controller_name == PagesController.controller_name
     %li.active
@@ -6,3 +6,8 @@
     - unless index_action?
       %li.active
         = action_name.humanize
+- if show_locale_dropdown?
+  .pull-right
+    = form_tag change_locale_internationalization_path, method: :get, enforce_utf8: false do
+      = select_tag :locale, options_for_select(available_locales, I18n.locale), onchange: 'this.form.submit()'
+.clearfix
