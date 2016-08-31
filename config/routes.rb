@@ -20,6 +20,14 @@ Rails.application.routes.draw do
       end
     end
     get 'jwplayer', to: 'jwplayer#index'
+
+    resource :internationalization, only: [],
+                                    controller: :internationalization do
+      collection do
+        get :change_locale
+      end
+    end
+    get 'internationalization', to: 'internationalization#index'
   end
 
   get :home, to: 'pages#home'
