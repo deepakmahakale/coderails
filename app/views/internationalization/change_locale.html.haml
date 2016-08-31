@@ -1,55 +1,45 @@
 %p
   %h3= t('.hello')
-
 %p
   %h3= t('.i18n_desc')
-%p
-  %h3
-    Time
-  l(Time.now)
-  %br
-  \#=>
-  = l(Time.now)
-  %h3
-    Time with format
-  l(Time.now, format: :short)
-  %br
-  \#=>
-  = l(Time.now, format: :short)
-  %h3
-    Date
-  l(Date.today)
-  %br
-  \#=>
-  = l(Date.today)
-  %h3
-    Date with format
-  l(Date.today, format: :short)
-  %br
-  \#=>
-  = l(Date.today, format: :short)
-  %h3
-    number_to_currency
-  number_to_currency(12.3)
-  %br
-  \#=>
-  = number_to_currency(12.3)
-  %h3
-    number_to_percentage
-  number_to_percentage(75)
-  %br
-  \#=>
-  = number_to_percentage(75)
-  %h3
-    number_to_human
-  number_to_human(14_567_890)
-  %br
-  \#=>
-  = number_to_human(14_567_890)
 
-  %h3
-    number_to_human_size
-  number_to_human_size(52_612_345)
-  %br
-  \#=>
-  = number_to_human_size(52_612_345)
+:markdown
+  ### Time
+  ```ruby
+  l(Time.now) #=> #{l(Time.now)}
+  ```
+
+  ### Time with format
+  ```ruby
+  l(Time.now, format: :short) #=> #{l(Time.now, format: :short)}
+  ```
+
+  ### Date
+  ```ruby
+  l(Date.today) #=> #{l(Date.today)}
+  ```
+
+  ### Date with format
+  ```ruby
+  l(Date.today, format: :short) #=> #{l(Date.today, format: :short)}
+  ```
+
+  ### number_to_currency
+  ```ruby
+  number_to_currency(12.3) #=> #{number_to_currency(12.3)}
+  ```
+
+  ### number_to_percentage
+  ```ruby
+  number_to_percentage(75) #=> #{number_to_percentage(75)}
+  ```
+
+  ### number_to_human
+  ```ruby
+  number_to_human(14_567_890) #=> #{number_to_human(14_567_890)}
+  ```
+
+  ### number_to_human_size
+  ```ruby
+  number_to_human_size(52_612_345) #=> #{number_to_human_size(52_612_345)}
+  ```
