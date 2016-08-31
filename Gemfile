@@ -13,6 +13,7 @@ gem 'wicked_pdf', '1.0.6'
 gem 'wkhtmltopdf-binary', '0.12.3'
 gem 'fusioncharts-rails', '0.0.2'
 gem 'rails-i18n', '~> 4.0'
+gem 'redcarpet'
 
 group :development, :test do
   gem 'sqlite3', '1.3.11'
