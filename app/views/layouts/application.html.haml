@@ -14,5 +14,6 @@
     = csrf_meta_tags
   %body
     .container
-      = render 'shared/breadcrumb'
-      = yield
+      .row
+        = render 'shared/breadcrumb'
+        = yield

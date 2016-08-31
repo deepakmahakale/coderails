@@ -14,6 +14,7 @@ gem 'wkhtmltopdf-binary', '0.12.3'
 gem 'fusioncharts-rails', '0.0.2'
 gem 'redcarpet'
 gem 'rouge'
+gem 'rails-i18n', '~> 4.0'
 
 group :development, :test do
   gem 'sqlite3', '1.3.11'

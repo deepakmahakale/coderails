@@ -1,0 +1,29 @@
+%p
+  %h3= t('.hello')
+%p
+  %h3= t('.i18n_desc')
+
+= render 'code', title: 'Time',
+                 command: 'l(Time.now)',
+                 result: l(Time.now)
+= render 'code', title: 'Time with format',
+                 command: 'l(Time.now, format: :short)',
+                 result: l(Time.now, format: :short)
+= render 'code', title: 'Date',
+                 command: 'l(Date.today)',
+                 result: l(Date.today)
+= render 'code', title: 'Date with format',
+                 command: 'l(Date.today, format: :short)',
+                 result: l(Date.today, format: :short)
+= render 'code', title: 'Number To Currency',
+                 command: 'number_to_currency(12.3)',
+                 result: number_to_currency(12.3)
+= render 'code', title: 'Number To Percentage',
+                 command: 'number_to_percentage(75)',
+                 result: number_to_percentage(75)
+= render 'code', title: 'Number To Human',
+                 command: 'number_to_human(14_567_890)',
+                 result: number_to_human(14_567_890)
+= render 'code', title: 'Number To Human Size',
+                 command: 'number_to_human_size(52_612_345)',
+                 result: number_to_human_size(52_612_345)
