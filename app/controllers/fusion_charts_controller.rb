@@ -1,5 +1,7 @@
 # Fusion charts demo
 class FusionChartsController < ApplicationController
+  caches_action :index, :column2d
+
   def column2d
     @chart = Fusioncharts::Chart.new(
       width: '600',

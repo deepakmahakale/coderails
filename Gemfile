@@ -15,6 +15,8 @@ gem 'fusioncharts-rails', '0.0.2'
 gem 'redcarpet'
 gem 'rouge'
 gem 'rails-i18n', '~> 4.0'
+gem 'actionpack-action_caching'
+gem 'actionpack-page_caching'
 
 group :development, :test do
   gem 'sqlite3', '1.3.11'

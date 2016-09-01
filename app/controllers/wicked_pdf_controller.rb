@@ -1,5 +1,7 @@
 # Demo for wicked pdf
 class WickedPdfController < ApplicationController
+  caches_action :index, :table_with_no_break
+
   def table_with_no_break
     respond_to do |format|
       format.html
