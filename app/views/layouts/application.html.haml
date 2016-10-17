@@ -13,7 +13,8 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body
+    = render 'shared/header'
     .container
-      .row
-        = render 'shared/breadcrumb'
-        = yield
+      = render 'shared/flash'
+      = # render 'shared/breadcrumb'
+      = yield

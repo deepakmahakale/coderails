@@ -1,0 +1,6 @@
+- alert_type = { notice: 'success', alert: 'danger' }
+- flash.map do |name, msg|
+  .alert.fade.in{ class: "alert-#{alert_type[name.to_sym]}"}
+    %strong= notice
+    %a.close{ href: '#', data: { dismiss: :alert }, aria: { label: :close } }
+      &times;

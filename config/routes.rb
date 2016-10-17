@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users, path_names: {sign_in: 'login', sign_out: 'logout'}
+
   scope :demo do
     resource :wicked_pdf, only: [], controller: :wicked_pdf do
       collection do
