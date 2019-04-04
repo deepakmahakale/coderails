@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.6'
+gem 'rails', '4.2.11.1'
 gem 'sass-rails', '5.0.4'
 gem 'haml-rails', '0.9.0'
 gem 'uglifier', '3.0.0'
