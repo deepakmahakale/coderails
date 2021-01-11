@@ -123,7 +123,7 @@ GEM
     rake (11.2.2)
     rdoc (4.2.2)
       json (~> 1.4)
-    redcarpet (3.3.4)
+    redcarpet (3.5.1)
     rouge (1.10.1)
     rspec-core (3.4.4)
       rspec-support (~> 3.4.0)
